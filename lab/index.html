@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <!-- HEX CLOCK !-->
+            <div id="hex-clock">
+              <h1 class="part-title">Hex Clock</h1>
+                <div id="clock">LOADING...</div>
+            </div>
+
+            <!-- SOLAR SYSTEM !-->
+            <div id="solar-system">
+                <h1 class="part-title">HTML Solar System</h1>
+                <div id="solarBlocker">
+                  <div id="solarButton" onclick="startSolar()" display="block">
+                    START
+                  </div>
+                </div>
+                <div id="counter">
+                    <p style="font-size: 24px; margin-bottom: 20px; font-family: Ubuntu;">
+                        <i>Revolutions</i>
+                    </p>
+                    <p>
+                        <b>Mercury</b> <span id="mer-count"></span>
+                    </p>
+                    <p>
+                        <b>Venus</b> <span id="ven-count"></span>
+                    </p>
+                    <p>
+                        <b>Earth</b> <span id="ear-count"></span>
+                        - <b>( Moon )</b> <span id="moon-count"></span>
+                    </p>
+                    <p>
+                        <b>Mars</b> <span id="mar-count"></span>
+                    </p>
+                    <p>
+                        <b>Jupiter</b> <span id="jup-count"></span>
+                    </p>
+                    <p>
+                        <b>Saturn</b> <span id="sat-count"></span>
+                    </p>
+                    <p>
+                        <b>Uranus</b> <span id="ura-count"></span>
+                    </p>
+                    <p>
+                        <b>Neptune</b> <span id="nep-count"></span>
+                    </p>
+                    <p>
+                        <b>Pluto</b> <span id="plu-count"></span>
+                    </p>
+                </div>
+
+                <div id="sun-planet"></div>
+                <div id="mercury-planet"></div>
+                <div id="venus-planet"></div>
+                <div id="earth-planet"></div>
+                <div id="moon-planet"></div>
+                <div id="mars-planet"></div>
+                <div id="jupiter-planet"></div>
+                <div id="saturn-planet"></div>
+                <div id="uranus-planet"></div>
+                <div id="neptune-planet"></div>
+                <div id="pluto-planet"></div>
+
+                <div id="speed-buttons-container">
+                  SPEED
+                  <div id="speed-buttons">
+                    <button onclick="planetSpeed(1)" class="speedButton">1X</button>
+                    <button onclick="planetSpeed(5)" class="speedButton">5X</button>
+                    <button onclick="planetSpeed(25)" class="speedButton">25X</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- HTML / CSS PLAYGROUND !-->
+            <div id="js-test">
+              <h1 class="part-title" style="background-color: #2c3e50; margin-bottom: 0px; padding-bottom: 20px;">
+                Webdev Playground
+              </h1>
+              <div id="input-blocks">
+                <div id="logos">
+                  <div>HTML</div>
+                  <div>CSS</div>
+                  <div>JS</div>
+                </div>
+                <div id="code-blocks">
+                  <textarea type="text" id="html-input" placeholder="Put some HTML here..."></textarea>
+                  <textarea type="text" id="css-input" placeholder="Some CSS here..."></textarea>
+                  <textarea type="text" id="js-input" placeholder="And finally some JS here"></textarea>
+                </div>
+              </div>
+              <button onclick="runJs()">RUN</button>
+              <iframe id="js-output">
+              </iframe>
+            </div>
+
+            <!-- CSS3 GENERATOR !-->
+            <div id="css3-generator">
+              <h1 class="part-title">CSS3 Generator</h1>
+              <div id="css3-block" style="font-family: Arial; font-size: 18px; color: #000;">
+
+                <!--
+                *** BOX SETTINGS ***
+                !-->
+                <div id="box-css">
+                  <!-- Background color !-->
+                  <div class="css-input">
+                    <b>Background color</b>
+                    <input type="color" name="bg-color" id="bg-color-input" value="#ffffff">
+                  </div>
+                  <!-- Border !-->
+                  <div class="css-input">
+                    <b>Border</b>
+                    <input type="number" name="border-width" id="border-width-input" value=0 min=0 max=10>px
+                    <select id="border-style-input">
+                      <option value="dashed">Dashed</option>
+                      <option value="solid" selected="selected">Solid</option>
+                      <option value="double">Double</option>
+                      <option value="groove">Groove</option>
+                      <option value="ridge">Ridge</option>
+                      <option value="inset">Inset</option>
+                      <option value="outset">Outset</option>
+                      <option value="none">None</option>
+                      <option value="hidden">Hidden</option>
+                    </select>
+                    <input type="color" name="border-color" id="border-color-input" value="#000000">
+                  </div>
+                  <!-- Border radius !-->
+                  <div class="css-input">
+                    <b>Border radius</b>
+                    <div class="css-input">
+                      Top left <input type="number" name="border-radius-tl-width" id="border-radius-tl-input" value=0 min=0 max=100>
+                      <input type="number" name="border-radius-tr-width" id="border-radius-tr-input" value=0 min=0 max=100> Top right
+                    </div>
+                    <div class="css-input">
+                      Bot left <input type="number" name="border-radius-bl-width" id="border-radius-bl-input" value=0 min=0 max=100>
+                      <input type="number" name="border-radius-br-width" id="border-radius-br-input" value=0 min=0 max=100> Bot right
+                    </div>
+                  </div>
+                  <!-- Box Shadow !-->
+                  <div class="css-input" id="shadow-css">
+                    <b>Box shadow</b>
+                    <div class="css-input">
+                      Vertical align <input type="number" name="shadow-v-width" id="shadow-v-input" value=0 min=0 max=10>px
+                    - Horizontal align <input type="number" name="shadow-h-width" id="shadow-h-input" value=0 min=0 max=10>px
+                    </div>
+                    <div class="css-input">
+                      Blur radius<input type="number" name="shadow-blur-width" id="shadow-blur-input" value=0 min=0 max=10>px
+                      - Spread radius <input type="number" name="shadow-spread-width" id="shadow-spread-input" value=0 min=0 max=10>px
+                      <input type="color" name="shadow-color" id="shadow-color-input" value="#000000">
+                      <input type="checkbox" name="shadow-inset" id="shadow-inset-input"> Inset
+                    </div>
+                  </div>
+                </div>
+
+                <!--
+                *** TEXT SETTINGS ***
+                !-->
+                <div id="text-css">
+                  <!-- Text color !-->
+                  <div class="css-input">
+                    <b>Text color</b>
+                    <input type="color" name="text-color" id="text-color-input" value="#000000">
+                  </div>
+                  <!-- Font family !-->
+                  <div class="css-input">
+                    <b>Font</b>
+                    <input type="text" name="font-family" id="font-family-input" value="Arial">
+                    <input type="number" name="font-size" id="font-size-input" value=18 min=8 max=32>
+                    <select id="font-style-input">
+                      <option value="normal" selected="selected">Normal</option>
+                      <option value="italic">Italic</option>
+                      <option value="oblique">Oblique</option>
+                    </select>
+                    <select id="font-weight-input">
+                      <option value="lighter">Lighter</option>
+                      <option value="light">Light</option>
+                      <option value="normal" selected="selected">Normal</option>
+                      <option value="bold">Bold</option>
+                      <option value="bolder">Bolder</option>
+                    </select>
+                  </div>
+                  <!-- Text Shadow !-->
+                  <div class="css-input" id="t-shadow-css">
+                    <b>Text shadow</b>
+                    <div class="css-input">
+                      Vertical align <input type="number" name="t-shadow-v-width" id="t-shadow-v-input" value=0 min=0 max=10>px
+                      - Horizontal align <input type="number" name="t-shadow-h-width" id="t-shadow-h-input" value=0 min=0 max=10>px
+                    </div>
+                    <div class="css-input">
+                      Blur radius <input type="number" name="t-shadow-blur-width" id="t-shadow-blur-input" value=0 min=0 max=10>
+                      <input type="color" name="t-shadow-color" id="t-shadow-color-input" value="#000000">
+                    </div>
+                  </div>
+                </div>
+                <button onclick="runCss()">APPLY</button>
+              </div>
+              <!-- BLOCK CONTAINING THE CSS CODE !-->
+              <div id="css3-rules" style="display: none;">
+              </div>
+            </div>
+
+            <!-- ROTATING SHIT !-->
+            <div id="rotating-shit">
+              <h1 class="part-title" id="spinning-title"><s>Beautiful</s> Useless spinning shit</h1>
+              <h2 id="rotating-info">
+                You better appreciate this shit because it fucking pissed me off
+                with all this overflow and positionning bullshit
+              </h2>
+              
+              <!--
+                YOU BETTER APPRECIATE THIS FUCKING STAIR
+              !-->
+              
+              <div id="rot-cont">
+                <div class="spinning-shit sp1">
+                  <div class="spinning-shit sp2">
+                    <div class="spinning-shit sp3">
+                      <div class="spinning-shit sp4">
+                        <div class="spinning-shit sp5">
+                          <div class="spinning-shit sp6">
+                            <div class="spinning-shit sp7">
+                              <div class="spinning-shit sp8">
+                                <div class="spinning-shit sp9">
+                                  <div class="spinning-shit sp10">
+                                    <div class="spinning-shit sp11">
+                                      <div class="spinning-shit sp12">
+                                        <div class="spinning-shit sp13">
+                                          <div class="spinning-shit sp14">
+                                            <div class="spinning-shit sp15">
+                                              <div class="spinning-shit sp16">
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ROTATING SHIT END !-->
+
+            <!-- BEAUTIFUL CSS !-->
+
+        </div>
+    </body>
+    <script src="scripts.js"></script>
+</html>
