@@ -1,0 +1,556 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+html, body {
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+html, body, p, h1, h2, h3, h4, h5 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1.part-title {
+  width: 100%;
+  font-size: 48px;
+  font-family: Montserrat;
+  color: #ecf0f1;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  height: 48px;
+  z-index: 3;
+  text-align: center;
+}
+
+h2.sub-title {
+  width: 100%;
+  font-size: 36px;
+  font-family: Montserrat;
+  color: #ecf0f1;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  height: 36px;
+  text-align: center;
+}
+
+#content {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    height: auto;
+}
+
+#hex-clock {
+    width: 100%;
+    text-align: center;
+    height: 320px;
+    font-size: 96px;
+    font-family: Lato;
+    font-weight: 300;
+    color: #bdc3c7;
+}
+
+#clock {
+  height: 242px;
+  line-height: 242px;
+}
+
+/*------------------------------- SOLAR SYSTEM -------------------------------*/
+#counter {
+    font-size: 18px;
+    color: #bdc3c7;
+    font-family: Ubuntu;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#counter span {
+    font-family: Lato;
+    font-weight: 300;
+}
+
+#solar-system {
+    width: 100%;
+    background-color: #1C1C1C;
+    height: 1200px;
+}
+
+#solar-system div {
+    position: absolute;
+}
+
+#solarBlocker {
+    width: 100%;
+    height: 1200px;
+    z-index: 2;
+    position: absolute;
+    top: 320px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#solarButton {
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  font-family: Ubuntu;
+  font-size: 40px;
+  color: #ecf0f1;
+  border: 4px solid #ecf0f1;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  margin-top: 570px;
+  left: calc(50% - 125px);
+}
+
+#solarButton:hover {
+  cursor: pointer;
+  background-color: #000;
+}
+
+#sun-planet {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #f1c40f;
+    left: calc(50% - 30px);
+    top: 870px;
+    -webkit-box-shadow: 0 0 16px 2px #FF9900;
+    box-shadow: 0 0 16px 2px #FF9900;
+}
+
+#mercury-planet {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #d9b38c;
+}
+
+#venus-planet {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ff9933;
+}
+
+#earth-planet {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #3498db;
+}
+
+#moon-planet {
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #bdc3c7;
+}
+
+#mars-planet {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    background-color: #ff531a;
+}
+
+#jupiter-planet {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #ffcc66;
+}
+
+#saturn-planet {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    background-color: #dfbf9f;
+}
+
+#uranus-planet {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    background-color: #ccddff;
+}
+
+#neptune-planet {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #4d79ff;
+}
+
+#pluto-planet {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #cce5ff;
+}
+
+.speedButton {
+  width: 30%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #eee;
+  color: #eee;
+  text-align: center;
+  display: table-cell;
+  margin: 1%;
+  font-family: Montserrat;
+  font-size: 20px;
+}
+
+#speed-buttons-container {
+  display: block;
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  top: 1420px;
+  text-align: center;
+  color: #eee;
+  font-family: Montserrat;
+  font-size: 24px;
+}
+
+#speed-buttons {
+  display: table;
+  position: relative !important;
+  width: 100%;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*----------------------------------- PLANES ---------------------------------*/
+
+#planes {
+  width: 100%;
+  background-color: #3498db;
+  height: 1200px;
+  overflow: hidden;
+}
+
+.plane {
+  position: absolute;
+  overflow: hidden;
+}
+
+.planeInfos {
+  width: 100%;
+  display: block;
+  margin: 5px 0px;
+  font-size: 16px;
+  font-family: Lato;
+  text-align: center;
+  color: #112;
+  font-style: italic;
+  position: absolute;
+  border-bottom: 1px solid #446;
+  padding-bottom: 4px;
+}
+
+/* DR400 */
+#dr400-plane {
+  top: 1600px;
+}
+
+#dr400-infos {
+  top: 1720px;
+}
+
+/* RAFALE */
+#rafale-plane {
+  top: 1800px;
+}
+
+#rafale-infos {
+  top: 1920px;
+}
+
+/* BLACKBIRD */
+#blackbird-plane {
+  top: 2000px;
+}
+
+#blackbird-infos {
+  top: 2120px;
+}
+
+/* MINUTEMAN */
+#minuteman-plane {
+  top: 2200px;
+}
+
+#minuteman-infos {
+  top: 2320px;
+}
+
+/*-------------------------------- HTML Playground ----------------------------*/
+#js-test {
+  width: 100%;
+  min-height: 800px;
+  height: auto;
+}
+
+#js-test button {
+  height: 40px;
+  width: 180px;
+  border: 2px solid #3c6fb3;
+  background-color: #e6e6e6;
+  font-family: Ubuntu;
+  font-size: 24px;
+  color: #3c6fb3;
+  margin: 10px auto;
+  display: block;
+}
+
+#logos {
+  width: 100%;
+  display: flex;
+  height: 50px;
+}
+
+#logos div {
+  flex-grow: 1;
+  font-family: Montserrat;
+  width: 50%;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+}
+
+#logos div:nth-child(1) {
+  background-color: #e67e22;
+  color: #ecf0f1;
+}
+
+#logos div:nth-child(2) {
+  background-color: #3498db;
+  color: #ecf0f1;
+}
+
+#logos div:nth-child(3) {
+  background-color: #f2c81e;
+  color: #111;
+}
+
+#input-blocks {
+  width: 100%;
+  display: block;
+}
+
+#code-blocks {
+  display: flex;
+}
+
+#code-blocks textarea {
+  font-family: monospace;
+  font-size: 16px;
+  resize: none;
+  height: 400px;
+  flex-grow: 1;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin: 0px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#code-blocks textarea:focus {
+  outline: 0;
+  background-color: #d9d8d8;
+  border: 2px solid #3196f4;
+}
+
+#js-output {
+  margin: 10px;
+  width: calc(100% - 20px);
+  height: 500px;
+  resize: vertical;
+  box-sizing: border-box;
+  border: 2px solid #6c92b5;
+}
+
+/*----------------------------- CSS3 Generator -------------------------------*/
+
+#css3-generator {
+  width: 100%;
+  min-height: 800px;
+  background-color: #73B1D6;
+  display: block;
+  vertical-align: bottom;
+  height: 100%;
+}
+
+#css3-block b {
+  border-bottom: 2px dashed #2952a3;
+}
+
+#css3-block {
+  width: 80%;
+  margin: 40px auto;
+  padding: 10px;
+  background-color: #fff;
+  display: block;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+#css3-block button {
+  width: 120px;
+  height: 40px;
+  display: block;
+  margin: 10px auto;
+  color: #3498db;
+  background-color: #eef;
+  font-family: Arial;
+  font-size: 24px;
+  border: 2px solid #3498db;
+}
+
+#css3-block button:hover {
+  cursor: pointer;
+  color: #eef;
+  background-color: #3498db;
+}
+
+#text-css, #box-css {
+  height: 80%;
+  width: calc(50% - 10px);
+  border: 1px solid #888;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.css-input {
+  width: 100%;
+  margin: 8px 0px;
+  padding: 4px;
+  background-color: #EFF4E4;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+#shadow-css input, #t-shadow-css input {
+  width: 40px;
+}
+
+/*-- INPUT STYLES --*/
+#css3-block input {
+  margin: 4px;
+  font-family: Arial;
+  font-size: 16px;
+}
+
+#css3-block input:not([type=color]), #css3-block select {
+  background-color: #EFF4E4;
+  border-radius: 1px;
+  border: 0px solid #000;
+  border-bottom: 2px solid #2c3e50;
+  padding: 2px;
+  font-family: Arial;
+}
+
+#css3-block input[type=color] {
+  background-color: #fff;
+  outline: none;
+  border: 1px solid #888;
+  width: 25px;
+  height: 25px;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+}
+
+#css3-block input[type=text] {
+  width: 150px;
+  max-width: 100%;
+}
+
+#css3-block input[type=color]:focus, #css3-block input[type=color]:hover {
+  border: 1px solid #3498db;
+  border-radius: 25%;
+  -webkit-border-radius: 25%;
+}
+
+#css3-block input:hover, #css3-block select:hover {
+  background-color: #f0f1f1;
+  border-bottom: 2px solid #34495e;
+}
+
+#css3-block input:focus, #css3-block select:focus {
+  outline: none;
+  border-bottom: 2px solid #3498db;
+}
+
+/*-- CSS3 RULES --*/
+#css3-rules {
+  width: 80%;
+  margin: 10px auto;
+  background-color: #DEE1E3;
+  border-radius: 4px;
+  border: 1px solid #bdc3c7;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/*----------------------------- ROTATING SHIT --------------------------------*/
+#rotating-shit {
+  min-height: 500px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  background-color: #ffafaf;
+  overflow: hidden;
+}
+
+#rot-cont {
+  margin: 0px;
+  height: 400px;
+  overflow: hidden;
+}
+
+#spinning-title {
+  margin-bottom: 10px;
+}
+
+#rotating-info {
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+  font-family: Montserrat;
+  color: #ecf0f1;
+}
+
+.spinning-shit {
+  border: 2px solid #000;
+  -webkit-animation:spin 64s linear infinite;
+  -moz-animation:spin 64s linear infinite;
+  animation:spin 64s linear infinite;
+  width: 200px;
+  height: 200px;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(0,0,0,0.15);
+  position: relative;
+}
+
+.sp1 {
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
