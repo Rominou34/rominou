@@ -12,6 +12,10 @@ It's just a personal website I created. I already have a professional portfolio 
 
 Available at http://rominou.ovh/lab is my lab. It's a single HTML page which runs various JS scripts, and I mainly use it to have fun doing some JS experiences. Whenever I have an idea of some silly thing I could do using Javascript I just go to this page and do it, then when it's finished I deploy it on the website
 
+##The ML folder
+
+This folder contains a basic Machine Learning game, more info about this can be found here: https://github.com/Rominou34/Machine-learning-game
+
 ##License
 
 You can copy this website as you want, but as the home section contains some private information contact me first if you want to share it somewhere :)
