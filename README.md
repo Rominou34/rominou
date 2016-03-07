@@ -14,6 +14,8 @@ Available at http://rominou.ovh/lab is my lab. It's a single HTML page which run
 
 ##License
 
-You can copy this website as you want, but as it contains some private information contact me first if you want to share it somewhere :)
+You can copy this website as you want, but as the home section contains some private information contact me first if you want to share it somewhere :)
 
 Apart from that, I don't even care if you copy the whole source code to make yourself a website ( as long as you don't post it on Reddit to steal that sweet karma ), and it would even make me proud :)
+
+If you want to copy the lab or use the functions inside of it to do some geeky stuff go ahead
