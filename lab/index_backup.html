@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <!-- HEX CLOCK !-->
+            <div id="hex-clock">
+              <h1 class="part-title">Hex Clock</h1>
+                <div id="clock">LOADING...</div>
+            </div>
+
+            <!-- SOLAR SYSTEM !-->
+            <div id="solar-system">
+                <h1 class="part-title">HTML Solar System</h1>
+                <div id="solarBlocker">
+                  <div id="solarButton" onclick="startSolar()" display="block">
+                    START
+                  </div>
+                </div>
+                <div id="counter">
+                    <p style="font-size: 24px; margin-bottom: 20px; font-family: Ubuntu;">
+                        <i>Revolutions</i>
+                    </p>
+                    <p>
+                        <b>Mercury</b> <span id="mer-count"></span>
+                    </p>
+                    <p>
+                        <b>Venus</b> <span id="ven-count"></span>
+                    </p>
+                    <p>
+                        <b>Earth</b> <span id="ear-count"></span>
+                        - <b>( Moon )</b> <span id="moon-count"></span>
+                    </p>
+                    <p>
+                        <b>Mars</b> <span id="mar-count"></span>
+                    </p>
+                    <p>
+                        <b>Jupiter</b> <span id="jup-count"></span>
+                    </p>
+                    <p>
+                        <b>Saturn</b> <span id="sat-count"></span>
+                    </p>
+                    <p>
+                        <b>Uranus</b> <span id="ura-count"></span>
+                    </p>
+                    <p>
+                        <b>Neptune</b> <span id="nep-count"></span>
+                    </p>
+                    <p>
+                        <b>Pluto</b> <span id="plu-count"></span>
+                    </p>
+                </div>
+
+                <div id="sun-planet"></div>
+                <div id="mercury-planet"></div>
+                <div id="venus-planet"></div>
+                <div id="earth-planet"></div>
+                <div id="moon-planet"></div>
+                <div id="mars-planet"></div>
+                <div id="jupiter-planet"></div>
+                <div id="saturn-planet"></div>
+                <div id="uranus-planet"></div>
+                <div id="neptune-planet"></div>
+                <div id="pluto-planet"></div>
+
+                <div id="speed-buttons-container">
+                  SPEED
+                  <div id="speed-buttons">
+                    <button onclick="planetSpeed(1)" class="speedButton">1X</button>
+                    <button onclick="planetSpeed(5)" class="speedButton">5X</button>
+                    <button onclick="planetSpeed(25)" class="speedButton">25X</button>
+                  </div>
+                </div>
+            </div>
+
+            <!-- PLANES !-->
+            <div id="planes">
+              <h1 class="part-title">Aircraft speed</h1>
+              <img src="../img/planes/dr400.png" alt="Robin DR400" class="plane" id="dr400-plane"/>
+              <h2 class="planeInfos" id="dr400-infos">Robin DR400 ( 278 km/h )</h2>
+
+              <img src="../img/planes/rafale.png" alt="Dassault Rafale" class="plane" id="rafale-plane"/>
+              <h2 class="planeInfos" id="rafale-infos">Dassault Rafale ( 2130 km/h )</h2>
+
+              <img src="../img/planes/sr-71.png" alt="Blackbird" class="plane" id="blackbird-plane"/>
+              <h2 class="planeInfos" id="blackbird-infos">Lockheed SR-71 Blackbird ( 3540 km/h )</h2>
+            </div>
+
+            <!-- STACK OVERFLOW !-->
+            <div id="js-test">
+              <div id="input-blocks">
+                <textarea type="text" id="html-input"></textarea>
+                <textarea type="text" id="css-input"></textarea>
+              </div>
+              <button onclick="runJs()">RUN</button>
+              <iframe id="js-output">
+              </iframe>
+            </div>
+        </div>
+    </body>
+    <script src="scripts.js"></script>
+</html>
