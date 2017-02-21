@@ -8,91 +8,63 @@
 
     <body>
       <p id="waifu">PS: Azunyan Best girl</p>
-      <a href="http://rominou.ovh/lab" id="lab-link">
-        <img src="http://rominou.ovh/img/Test-Tube-100">
-        <p>Go to the lab</p>
+      <a href="./lab" id="lab-link">
+        <img src="./img/Test-Tube-100.png">
+        <p id="lab-label">Go to the lab</p>
       </a>
       <div id="profilePic" onmouseover="displayBubble()" onmouseout="hideBubble()"></div>
       <div id="bubble" style="display: none;">" NYAH "</div>
 
       <div id="content">
         <!-- MY SHITTY PRESENTATION !-->
-        <p class="title">Romain "Rominou" Arnaud</p>
-
-        <p>Hi, I'm a 19 years old developper from France, I like to work on various
-        projects just for fun and I love web development.</p>
-
-        <p>Even though I just know basics about <span id="php">PHP</span>, I'm
-          still able to do some pretty neat things with it. I've got more knowledge
-          with good old <span id="html">HTML</span> - <span id="css">CSS</span>, so
-          I'm still able to make beautiful responsive websites.</p>
-
-        <p>Combined to my <span id="js">Javascript / JQuery</span> skills, you could say I'm a
-          <span class="false-shit">front-end beast</span> pretty good web designer.</p>
+        <h1 class="title" id="main-title">Romain "Rominou" Arnaud</h1>
+        <div id="intro">
+          <p>20 y.o webdev from France</p>
+          <p>
+            I am the living proof that if a monkey types on a keyboard for an
+            infinite amount of time, some things could happen
+          </p>
+        </div>
 
         <!-- MY SHITTY PROJECTS !-->
-        <p class="title">Projects</p>
-          <ul>
-            <li id="gundere-project">
-              <span class="project">Gunde.re</span>
-              <a href="http://gunde.re" class="entypo-globe projectIcon"></a>
-              <span class="entypo-info-circled projectIcon"></span>
-              <p class="project-description" style="display: none;">
-                A website where users can rate the
-                quality of an anime adaptation from a manga ( if it is fidel to the
-                source content )
-              </p>
-            </li>
-            <li id="azunyan-project">
-              <span class="project">Azunyan.ovh</span>
-              <a href="http://azunyan.ovh" class="entypo-globe projectIcon"></a>
-              <span class="entypo-info-circled projectIcon"></span>
-              <p class="project-description" style="display: none">
-                A website serving as a propaganda tool to spread the love form
-                the almighty goddess Azunyan<br/>
-                Just kidding I got the domain for free so I had some fun with it
-              </p>
-            </li>
-            <li id="madoka-project">
-              <span class="project">Madoka.ovh</span>
-              <a href="http://madoka.ovh" class="entypo-globe projectIcon"></a>
-              <span class="entypo-info-circled projectIcon"></span>
-              <p class="project-description" style="display: none">
-                Got the domain for free like Azunyan.ovh so I decided to have
-                some fun with it and do some dank ass shit
-              </p>
-            </li>
-            <li id="haruhi-project">
-              <span class="project">Haruhi.ovh</span>
-              <a href="http://haruhi.ovh" class="entypo-globe projectIcon"></a>
-              <span class="entypo-info-circled projectIcon"></span>
-              <p class="project-description" style="display: none">
-                Got the domain for free like its predecessors, still hasn't decided
-                what swaggy shit I should do with it
-              </p>
-            </li>
-            <li id="konata-project">
-              <span class="project">Konata.ovh</span>
-              <a href="http://konata.ovh" class="entypo-globe projectIcon"></a>
-              <span class="entypo-info-circled projectIcon"></span>
-              <p class="project-description" style="display: none">
-                <i>Blabla free domain</i>, I already have some ideas about the dank
-                shit I'll do on this one
-              </p>
-            </li>
-            <li id="ml-project">
-              <span class="project">Machine Learning</span>
-              <a href="http://rominou.ovh/ml" class="entypo-globe projectIcon"></a>
-              <span class="entypo-info-circled projectIcon"></span>
-              <p class="project-description" style="display: none">
-                A Javascript machine learning algorithm which learns to play a basic game,
-                composed of 2 groups of 4 neurons
-              </p>
-            </li>
-          </ul>
+        <h1 class="title">Projects</h1>
+          <div class="projects-container">
+            <div class="project">
+              <h3>Papillon</h3>
+              <p> A complete Front-end framework built using SASS and some
+              Vanilla Javascript</p>
+              <a href="http://rominou34.github.io/papillon/">Homepage</a>
+            </div>
+            <div class="project">
+              <h3>Daedalus</h3>
+              <p>A Dota 2 stats parser running using Meteor and React</p>
+              <a href="https://github.com/Rominou34/Daedalus">GitHub repo</a>
+            </div>
+            <div class="project">
+              <h3>ImgASCII</h3>
+              <p>A website converting images into ASCII</p>
+              <a href="http://rominou34.github.io/ImgAscii/">Homepage</a>
+            </div>
+            <div class="project">
+              <h3>AeroWeather</h3>
+              <p>A Chrome extension displaying the most recent METAR report
+                for a given airport</p>
+                <a href="https://github.com/Rominou34/AeroWeather">GitHub repo</a>
+            </div>
+            <div class="project">
+              <h3>0x40</h3>
+              <p>Remaking the original flash animation using Javascript</p>
+              <a href="https://github.com/Rominou34/0x40">GitHub repo</a>
+            </div>
+            <div class="project">
+              <h3>And more...</h3>
+              <p>Visit my GitHub to see more of my projects</p>
+              <a href="https://github.com/Rominou34">GitHub</a>
+            </div>
+          </div>
 
         <!-- SHITTY WAYS TO CONTACT ME !-->
-        <p class="title" style="margin-bottom: 10px;">Contact</p>
+        <h1 class="title" style="margin-bottom: 10px;">Stalk me</h1>
         <div id="contact">
           <a href="http://romainarnaud.fr" class="entypo-globe"></a>
           <a href="https://www.facebook.com/romain.arnaud340" class="entypo-facebook"></a>
@@ -102,6 +74,7 @@
           <a href="mailto:ayxiit@gmail.com" class="entypo-mail"></a>
         </div>
       </div>
+
     <script src="js/scripts.js"></script>
     </body>
 </html>

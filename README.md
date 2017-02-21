@@ -1,6 +1,6 @@
 # Rominou
 
-**This is my personal geeky website, available at http://rominou.ovh**
+**This is my personal geeky website, available at http://rominou.moe ( soon )**
 
 &nbsp;
 
